@@ -1,0 +1,277 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Assure que le body occupe toute la hauteur de la fenêtre */
+    margin: 0; /* Enlève les marges par défaut */
+    background-image: url(images/khinaii-van-laren-PBt5RnHAI3s-unsplash.jpg);
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.93);
+    padding: 20px;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}   
+
+.img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.link1 {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.93);
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #ff6b6b; /* Bordure principale */
+    box-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff6b6b, 0 0 30px #ff6b6b; /* Effet lumineux */
+    transition: all 0.3s ease-in-out;
+}
+
+.link1:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    box-shadow: 0 4px 8px white;
+}
+
+.link2 {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.93);
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #32cd32; /* Vert clair */
+    box-shadow: 0 0 10px #32cd32, 0 0 20px #32cd32, 0 0 30px #32cd32;
+    transition: all 0.3s ease-in-out;
+}
+
+.link2:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    box-shadow: 0 4px 8px white;
+}
+
+.link3 {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.93);
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #00bfff; /* Bleu clair */
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
+    transition: all 0.3s ease-in-out;
+}
+
+.link3:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    box-shadow: 0 4px 8px white;
+}
+
+.link4 {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.93);
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #ffa500; /* Orange */
+    box-shadow: 0 0 10px #ffa500, 0 0 20px #ffa500, 0 0 30px #ffa500;
+    transition: all 0.3s ease-in-out;
+}
+
+.link4:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    box-shadow: 0 4px 8px white;
+}
+
+.theme-toggle-container {
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.theme-toggle-button {
+    background-color: white;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.93);
+    color:rgb(0, 0, 0, 0.93) ;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block; /* Assure que le bouton occupe toute la largeur disponible */
+    margin: 20px auto; /* Centre horizontalement et ajoute un espace au-dessus */
+}
+
+.theme-toggle-button:hover {
+    background-color:rgba(255, 255, 255, 0.712);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.93);
+    padding: 20px;
+    width: 300px;
+    margin-top: 50px;
+    border: 2px solid #ff69b4; /* Rose néon */
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Application des animations */
+.link1 {
+    animation: slideIn 2s ease-in-out infinite;
+}
+
+.link2 {
+    animation: wiggle 2s ease-in-out infinite;
+}
+
+.link3 {
+    animation: fadeIn 2s ease-in-out infinite;
+}
+
+.link4 {
+    animation: spin 2s linear infinite;
+}
+
+/* Animation de changement de couleur pour h1, h2 et h3 */
+@keyframes colorChange {
+    0% {
+        color: #ff6b6b; /* Rouge */
+    }
+    25% {
+        color: #32cd32; /* Vert clair */
+    }
+    50% {
+        color: #00bfff; /* Bleu clair */
+    }
+    75% {
+        color: #ffa500; /* Orange */
+    }
+    100% {
+        color: #ff69b4; /* Rose */
+    }
+}
+
+/* Applique l'animation sur les éléments h1 et h2 */
+h1, h2, h3 {
+    animation: colorChange 1s infinite; /* L'animation dure 5 secondes et se répète indéfiniment */
+}
+
+/* Animation de changement de couleur pour la bordure en pointillé */
+@keyframes borderChange {
+    0% {
+        border-color: #ff6b6b; /* Rouge */
+    }
+    25% {
+        border-color: #32cd32; /* Vert clair */
+    }
+    50% {
+        border-color: #00bfff; /* Bleu clair */
+    }
+    75% {
+        border-color: #ffa500; /* Orange */
+    }
+    100% {
+        border-color: #ff69b4; /* Rose */
+    }
+}
+
